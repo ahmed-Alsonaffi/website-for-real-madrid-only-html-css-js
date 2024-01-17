@@ -1,0 +1,310 @@
+body,html{
+    width: 100%;
+    overflow-x: hidden;
+    margin:0 ;
+}
+header{
+    z-index: 1;  
+    height:40px;
+    position:absolute;
+    width: 100%;
+}
+
+header .ul{
+    list-style: none;
+    padding: 0px 0 0;
+    text-align: center;
+    position: relative;
+}
+header .ul .li{
+    display: inline-block;
+    margin-left: 20px;
+    padding-bottom: 2px;
+}
+header .ul .li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    transition: 0.6s ease-in;
+}
+header .ul .li a:hover{
+    color: red;
+}
+header .ul .li .list{
+    
+    display:none;
+    width: 200px;
+    position: absolute;
+    background-color: white;
+    margin:2px -47px 0 0;
+
+}
+header .ul .li:hover .list{
+    display: block;
+}
+header .ul .li .list a{
+    display: block;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+    color: black;
+}
+header .ul .li .list a:hover{
+    background-color: #a09494;
+    color: red;
+}
+.head{
+    height: 40px;
+    background-color: #23aaa0;
+}
+.player{
+    margin-right: px;
+    background-color: ;
+}
+.player .player_card{
+    background-image:url(..//plano%20general%20bernabeu%20real%20madridThumb.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    
+    background-position: right;
+    background-position: 
+}
+.player .player_card .choose{
+    background-color: white;
+    width: 120px;
+    position: relative;
+    top: 40px;
+    right:50px;
+    border: 1px solid black;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 40px;
+    
+}
+
+.player .player_card .choose label{
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 16px;
+}
+.player .player_card .choose .team{
+    position: absolute;
+    width: 1138px;
+    height: 0;
+    background-color: crimson;
+    z-index: 1;
+    top: 36px;
+    display: ;
+    transition: 0.6s;
+    overflow: hidden;
+    padding-right: 0px;
+}
+.player .player_card .choose:hover .team{
+    display: ;
+    height: 280px;
+    overflow-y: scroll;
+    
+}
+.player .player_card .choose .team .pl_pr{
+    display: inline-block;
+    border-left: 1px solid black;
+    padding: 10px;
+    overflow: hidden;
+    width: 200px;
+    height: 100px;
+    text-align: right;
+    margin-left: -5px;
+    margin-top: -4px;
+}
+.player .player_card .choose .team .pl_pr a{
+    text-decoration: none;
+    color: black;
+}
+.player .player_card .choose .team .pl_pr .pl_im{
+    height: 100px;
+    width: 90px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    
+}
+.player .player_card .choose .team .pl_pr .pl_im img{
+    width: 190px;
+    height: 250;
+    position: relative;
+    left: 50px;
+}
+.player .player_card .choose .team .pl_pr .pl_name{
+    position: relative;
+    display: inline-block;
+    bottom: 40px;
+    text-align: center;
+}
+.player .player_card .choose .team .pl_pr .pl_name label{
+    font-size: 30px;
+    margin: 0;
+}
+.player .player_card .choose .team .pl_pr .pl_ho{
+    width: 220px;
+    height: 140px;
+    position: relative;
+    background-color: rgba(19, 46, 82, 0.56);
+    bottom: 130px;
+    left: 10px;
+    display: none;
+}
+.player .player_card .choose .team .pl_pr:hover .pl_ho{
+    display: block;
+}
+.player .player_card .lab{
+    position: relative;
+    top: 40px;
+    right: 40px;
+}
+.player .player_card .lab label{
+    font-size: 60px;
+    color: white;
+}
+.player .player_card .lab label:nth-child(2){
+    font-size: 100px;
+    
+}
+.player .player_card .im{
+    height: 420px;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+.player .player_card .im img{
+    height: 550px;
+    width: 460px;
+}
+.player_info{
+    margin:180px 40px 0 0;
+    position: relative;
+}
+.player_info .personal{
+    width: 400px;
+    display: ;
+}
+.player_info .personal h2{
+    border-bottom: 3px solid #d4a02a;
+}
+.player_info .personal .pers{
+    margin-top: 20px;
+    display: inline-block;
+    width: 180px;
+}
+
+.player_info .personal .pers label{
+    display: block;
+    font-size: 20px;
+}
+.player_info .achm{
+    width: 400px;
+    display: ;
+}
+.player_info .achm h2{
+    border-bottom: 3px solid #d4a02a;
+}
+.player_info .achm .achm1 label{
+    font-size: 18px;
+    color: gray;
+}
+.player_info .achm .achm1 label:first-child{
+    font-size: 19px;
+    color: black;
+}
+.player_info .clubs{
+    width: 400px;
+    display: ;
+    margin-right: 61%;
+    position: absolute;
+    top: -20px;
+}
+}
+.player_info .clubs h2{
+    border-bottom: 3px solid #d4a02a;
+    color:brown;
+}
+.player_info .clubs label{
+    font-size: 18px;
+    color: gray;
+    display: block;
+}
+footer{
+    background-color: #524d49;
+    height: 300px;
+    margin-top: 40px;
+    position: relative;
+    
+}
+footer ul{
+    list-style: none;
+    display: inline-block;
+    margin-right: 70px;
+    height: 160px;
+    position: absolute;
+    top: 86px;
+    padding:10px 20px;
+}
+footer ul:last-child{
+    right: 200px;
+}
+footer ul:hover{
+    background-color: #575353;
+}
+footer ul li{
+    padding: 4px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #c4bbbb;
+    font-size: 18px;
+    transition: 1s ease;
+} 
+footer ul li:first-child a{
+    font-size: 26px;
+}
+footer .fonts{
+    padding: 20px 40% 30px 0;
+    border-bottom: 1px solid #a8a6a6;
+}
+footer .fonts .fab{
+    font-size: 30px;
+    border: 2px solid #a09d9d;
+    border-radius: 100%;
+    width:30px;
+    height: 30px;
+    padding: 6px;
+    color: #a09d9d;
+    margin-right: 25px;
+    text-align: center; 
+}
+footer .fonts .fab:hover{
+    cursor: pointer;
+}
+footer .fonts .fa-facebook-f:hover{
+    color: #1e26ff;
+    border-color: #5d5dff;
+}
+footer .fonts .fa-whatsapp:hover{
+    color: green;
+    border-color: green;
+}
+footer .fonts .fa-twitter:hover{
+    color: deepskyblue;
+    border-color: deepskyblue;
+}
+footer .fonts .fa-instagram:hover{
+    color: #953206;
+    border-color: #953206;
+}
+
+
+
+
+
+
+
