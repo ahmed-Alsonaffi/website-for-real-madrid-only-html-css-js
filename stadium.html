@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>stadium</title>
+        <link rel="stylesheet"  href="css/main.css">
+        <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css">
+        <style>
+            .title{
+                background-image: url(pictures/wp1827864.jpg);
+                height: 120px;
+                padding: 30px 200px 0 0 ;
+            }
+            .title label{
+                font-size: 60px;
+                color: white;
+            }
+            .std_m{
+                width: 940px;
+                height: 427px;
+                border: 2px solid; 
+                margin: auto;
+                position: relative;
+                overflow: hidden;
+                margin-top: 40px;
+                margin-bottom: 30px;
+            }
+            .std_m .std{
+                width: 940px;
+                height: 400px;
+                display: none;
+                position: absolute;
+                overflow: hidden;
+            }
+            .std_m .std:first-child{
+                display: block;
+            }
+            .std_m .button{
+                position: absolute;
+                bottom: 0px;
+                right: 417px;
+                z-index: 1;
+                width: 158px;               
+            }
+            .std_m .button span{
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: #a79f9f;
+                display: inline-block;
+                cursor: pointer;
+            }
+            .std_inf{
+                margin-right: 50px;
+            }
+            .std_inf .std-inf1{
+                
+                
+                
+            }
+            .std_inf .std-inf1 label{
+                display: block;
+                font-size: 20px;
+            }
+            .std_inf .std-inf1 label:last-child{
+                margin-right: 20px;
+            }
+            .stadium{
+                width: 60%;
+                margin-right: 40px;
+                padding: 10px;
+            }
+            .stadium p{
+                font-size: 18px;
+            }
+            .stadium img{
+                
+            }
+        </style>
+    </head>
+    <body dir="rtl">
+        <header id="header">
+            <ul class="ul">
+                <li class="li"><a href="index.html">الصفحة الرئيسية</a></li>
+                <li class="li"><a href="#">كرة القدم</a>
+                    <div class="list">
+                        <a href="players.html">الفريق</a>
+                        <a href="achieve.html">الانجازات</a>
+                        <a href="legends.html">أساطير النادي</a>
+                        <a href="football_history.html">تاريخ النادي</a>
+                    </div>
+                </li>
+                <li class="li"><a href="#">النادي</a>
+                    <div class="list">
+                        <a href="stadium.html">الملعب</a>
+                        <a href="match.html">مباريات</a>
+                        <a href="club.html">عن النادي</a>
+                    </div>
+                </li>
+                <li class="li"><a href="mailto:ahmed7746060@gmail.com">راسلنا</a></li>
+            </ul>
+        </header>
+        <div class="title">
+            <label>الملعب</label>
+        </div>
+        <div class="std_m">
+            <div class="std" id="std1">
+                <img src="pictures/FachadaBernabeu,1.jpg">
+            </div>
+            <div class="std" id="std2">
+                <img src="pictures/PanoramicaCastellana,1.jpg">
+            </div>
+            <div class="std" id="std3">
+                <img src="pictures/plano%20general%20bernabeu%20real%20madridThumb.jpg" style="margin-right: -240px;">
+            </div>
+            <div class="std" id="std4">
+                <img src="pictures/Captura-de-pantalla-2017-02-10-a-las-14.06.51Thumb.jpg">
+            </div>
+            <div class="button">
+                <span id="btn" onclick="button(1)"></span>
+                <span id="btn" onclick="button(2)"></span>
+                <span id="btn" onclick="button(3)"></span>
+                <span id="btn" onclick="button(4)"></span>
+            </div>
+        </div>
+        <script>
+            function button(n){
+                document.getElementById("std1").style.display="none";
+                document.getElementById("std2").style.display="none";
+                document.getElementById("std3").style.display="none";
+                document.getElementById("std4").style.display="none";
+                if(n==1){
+                    document.getElementById("std1").style.display="block";
+                }
+                else if(n==2){
+                    document.getElementById("std2").style.display="block";
+                }
+                else if(n==3){
+                    document.getElementById("std3").style.display="block";
+                }
+                else if(n==4){
+                    document.getElementById("std4").style.display="block";
+                }
+            }
+            setInterval(change,2000);
+            var n=1;
+            function change(){
+                document.getElementById("std1").style.display="none";
+                document.getElementById("std2").style.display="none";
+                document.getElementById("std3").style.display="none";
+                document.getElementById("std4").style.display="none";
+                if(n==1){
+                    document.getElementById("std1").style.display="block";
+                }
+                else if(n==2){
+                    document.getElementById("std2").style.display="block";
+                }
+                else if(n==3){
+                    document.getElementById("std3").style.display="block";
+                }
+                else if(n==4){
+                    document.getElementById("std4").style.display="block";
+                    n-=4;
+                }
+                ++n;
+            }
+        </script>
+        <div class="std_inf">
+            <div class="std-inf1">
+                <label>الاسم</label>
+                <label>ملعب سانتياجو برنابيو</label>
+            </div>
+            <div class="std-inf1">
+                <label>الافتتاح</label>
+                <label>1947</label>
+            </div>
+            <div class="std-inf1">
+                <label>السعة</label>
+                <label>81.044 شخص</label>
+            </div>
+            <div class="std-inf1">
+                <label>الأبعاد</label>
+                <label>105X 68 متر</label>
+            </div>
+            <div class="std-inf1">
+                <label>شدة الاضاءة</label>
+                <label>1.800 لوكس</label>
+            </div>
+        </div>
+        <div class="stadium">
+            <h1>ملعب سانتياغو برنابيو</h1>
+            <p>
+                ملعب سانتياغو برنابيو (بالإسبانية: Estadio Santiago Bernabéu) هو ملعب كرة قدم يقع في وسط مدريد عاصمة إسبانيا. افتتح في 14 ديسمبر 1947 وهو ملعب ريال مدريد . يتسع الملعب حالياً لأكثر من 81 ألف مُتفرج، وهو يعد من أكبر الملاعب في إسبانيا وأوروبا. بعد افتتاحه سمي باسم ملعب شامارتين الجديد، ثم سمي باسمه الحالي تكريماً لرئيس النادي الأسطوري في ذلك الوقت سانتياغو برنابيو. 
+            </p>
+            <p>
+                يعتبر ملعب سانتياغو برنابيو واحداً من أفضل ملاعب كرة القدم المعروفة وأكثرها تميزاً، فقد استضاف العديد من الأحداث بما في ذلك المباراة النهائية لـدوري أبطال أوروبا أربع مرات (1957، 1969، 1980، 2010)، وكذلك نهائي يورو 1964 ونهائي كأس العالم 1982. وتجرى عليه أيضاً مباريات نادي ريال مدريد في الدوري الإسباني. 
+            </p>
+            <img src="pictures/7b8731ea95ff8e3463447e2c99689dfa.jpg" style="width: 600px; height: 400px;">
+            <h3>الموقع</h3>
+            <p>
+                يقع ملعب سانتياغو برنابيو في منطقة باسيو دي لا كاستيلانا في بلدية تشامارتين، وهو يحتل كتلة يحده شوارع باسيو دي لا كاستيلانا وشوارع إسبينا كونشا، داميان بادري، ورافائيل سالغادو. 
+            </p>
+            <h3>التاريخ</h3>
+            <p>
+                يوم 22 يونيو 1944، منح البنك الصناعي بانكو مركانتل قرضا لكل من سانتياغو بيرنابيو و رفائييل سالغادو لشراء الأرض المجاورة لملعب تشامارتن القديم. في 5 سبتمبر 1944، تم توظيف المهندسين المعماريين مانويل مونيوز موناستيريو ولويس سولير أليماني لتصميم الملعب الجديد. في 27 أكتوبر 1944 بدأت أشغال البناء في الملعب.
+                تم افتتاح الملعب تشامارتن الجديد (بالإسبانية: Nuevo Estadio Chamartín) في 14 ديسمبر 1947 بمباراة بين ناديي ريال مدريد الإسباني و اوس بيلينينسيس البرتغالي والتي فاز بها النادي الأبيض بـ(3-1)
+                . وكان طاقة تحمل الملعب 74.145 متفرج، 27.645 منها مجهز بمقعد (7.125 مغطاة) 47.500 متفرج واقف. وكان سابينو باريناغا أول لاعب يسجل في الملعب الجديد. 
+            </p>
+            <img src="pictures/Actual+Santiago+Bernab%C3%A9u,1.jpg" style="width: 800px;height: 350px;">
+            <h3>سنة 1950</h3>
+            <p>
+                تم التجديد في سنة 1954، بحيث أصبح يسع الملعب لما يزيد عن 125.000 متفرج، وهكذا أصبح الملعب هو الأكبر في أوروبا التي أنشئت في تلك الفترة الحديثة.
+
+                بعد سنة من ذلك تم تغير اسمه إلى ملعب سانتياغو برنابيو من باب التكريم للرئيس، والذي توفي بعد ذلك سنة 1978، وفي 1957 استخدمت إدارة نادي ريال مدريد الإضاءة الكهربائية لأول مرة في المبارة الودية أمام نادي الرياضي ريسيف البرازيلي. 
+            </p>
+            <h3>سنة 1980</h3>
+            <p>
+                بعد فوز إسبانيا بشرف استضافة بطولة كأس العالم لكرة القدم سنة 1982 تم إجراء العديد من التغييرات ، وتم توظيف المهندسين المعماريين رافائيل لويس أليماني ومانويل ساليناس لمشروع ترميم الملعب. وهما اللذين نفدا المشروع الأول الأصلي بجوار مونيوز موناستيريو. واستمر العمل 16 شهر وكلفت تكلفتها 704 مليون بيزيتا، دفعت منها بلدية مدريد 530 مليون. 
+            </p>
+            <h3>سنة 1990</h3>
+            <p>
+                بعد سلسلة من الوفيات للجماهير في الثمانينيات (أبرزها ملعب هيسيل في بلجيكا وملعب هيلزبورة في إنجلترا)، أصدرت السلطات الإنجليزية تقرير تايلور عن كيفية تحسين سلامة المتفرجين في ملاعب كرة القدم الإنجليزية. وحذت حذوها اليويفا في أوروبا، واضطر الملعب لإنشاء اختصارات منفصلة لمختلف أقسام الملعب ومقاعد لكل الجماهير. 
+            </p>
+            <p>
+                وفي تسعينيات القرن الماضي، مرّ سانتياغو برنابيو بتوسع كبير وإعادة تصميم. وقد منح مجلس إدارة رامون ميندوزا المشروع إلى شركة Gines Navarro Construcciones، SA. وقد بدأ العمل في 7 فبراير 1992 وانتهى في 7 مايو 1994 بتكلفة أخيرة تزيد على 5 مليارات بيزيتا، مما أدى إلى زيادة ديون النادي بشكل كبير، دون وجود دعم مؤسسي. 
+            </p>
+            <p>
+                في المجموع، تم تركيب 20،200 مقعدًا مُرَقَّعًا، مع منح كل مقعد إمالة قدرها 87 درجة، مما يضمن رؤية مثالية وقربًا من الملعب. بالإضافة إلى ذلك، للوصول إلى الحلقة الجديدة أقيمت أربعة أبراج للمدخل من الخارج ، كل منها مع سلالم ومنحدر لولبي مركزي. 
+            </p>
+            <p>
+                بعد التعديل الجديد، تم زيادة ارتفاع الملعب من 22 م إلى 45 م. وهذا تسبب في مشاكل خلال فصل الشتاء، وترك ثلثي مجال اللعب في الظل. هذا النقص في ضوء الشمس أدى إلى تدهور العشب على أرض الملعب. لهذا السبب، تم تركيب شبكة أنابيب البولي بروبلين على عمق 20 سم تحت الملعب. على مدى أكثر من 30 كم، يقوم نظام الأنابيب بتدوير الماء الساخن، مع الحفاظ على العشب من التجمد في درجات الحرارة الباردة. 
+            </p>
+            <p>
+                ونظرا لارتفاع المدرجات الجديدة، كان من الضروري تحسين وزيادة القدرة على الإضاءة. كما تم تركيب سقف حماية قابل للسحب لحماية الجماهير. ووصلت سعة الملعب بعد التجديد إلى 110،000 متفرج. 
+            </p>
+            <p>
+                بالفعل في صيف عام 1998، وبرئاسة لورينزو سانز، تبنى ترتيبات جميع مقاعد سانتياجو بيرنابيو، ليصل قدرتها الإجمالية إلى 75328 متفرج. 
+            </p>
+            <h3>التسمية</h3>
+            <p>
+                سمي ملعب ريال مدريد بهذا الاسم تخليدًا لذكرى أهم شخصية في تاريخ ريال مدريد سانتياجو بيرنابيو حيث كان هو اللاعب ثم المدرب ثم الرئيس للنادي الملكي. وتعتبر كذلك فترة رئاسته هي الفترة الأطول في تاريخ الريال حيث بلغت 35 سنة من 1943 إلى 1978 كما أنها الفترة الذهبية في تاريخ نادي ريال مدريد حيث تعتبر فترة رئاسته أكثر الفترات التي تمكن فيها الريال من حصد لقب الدوري الإسباني (لاليجا La Liga) حيث حصد 16 لقباً في 35 سنة مع العلم بأن الريال هو أكثر الفرق الإسبانية حصدًا للقب الدوري بـ33 لقباً أولها موسم 1931-1932 وآخرها كان في موسم 2016/2017. 
+            </p>
+        </div>
+        <footer>
+            <div class="fonts">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <ul>
+                <li><a href="#">كرة القدم</a>
+                <li><a href="players.html">الفريق</a></li>
+                <li><a href="achieve.html">الانجازات</a></li>
+                <li><a href="legends.html">أساطير النادي</a></li>
+                <li><a href="football_history.html">تاريخ النادي</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">النادي</a>
+                <li><a href="stadium.html">الملعب</a></li>
+                <li><a href="match.html">مباريات</a></li>
+                <li><a href="club.html">عن النادي</a></li>\
+            </ul>
+        </footer>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
